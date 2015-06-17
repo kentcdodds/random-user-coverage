@@ -1,0 +1,59 @@
+{
+  "name": "random-user",
+  "version": "1.0.0",
+  "description": "Random user app, example for code coverage",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server --config ./node_modules/kcd-common-tools/shared/webpack.config.js --content-base src/ --port 8080 --colors --progress --watch",
+    "build": "NODE_ENV=development webpack --config ./node_modules/kcd-common-tools/shared/webpack.config.js --progress --colors",
+    "build:prod": "NODE_ENV=production webpack --config ./node_modules/kcd-common-tools/shared/webpack.config.js --progress --colors && cp src/index.html dist/",
+    "test": "NODE_ENV=test karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kentcdodds/random-user.git"
+  },
+  "keywords": [
+    "javascript",
+    "karma",
+    "webpack",
+    "test",
+    "coverage"
+  ],
+  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kentcdodds/random-user/issues"
+  },
+  "homepage": "https://github.com/kentcdodds/random-user#readme",
+  "devDependencies": {
+    "babel": "5.5.8",
+    "babel-core": "5.5.8",
+    "babel-eslint": "3.1.15",
+    "babel-loader": "5.1.4",
+    "chai": "3.0.0",
+    "eslint": "0.23.0",
+    "eslint-loader": "0.14.0",
+    "file-loader": "0.8.4",
+    "karma": "0.12.36",
+    "karma-chai": "0.1.0",
+    "karma-mocha": "0.1.10",
+    "kcd-common-tools": "1.0.0-beta.9",
+    "mocha": "2.2.5",
+    "node-libs-browser": "0.5.2",
+    "webpack": "1.9.11",
+    "webpack-dev-server": "1.9.0"
+  },
+  "kcdCommon": {
+    "webpack": "other/webpack-overrides.js"
+  },
+  "dependencies": {
+    "axios": "0.5.4",
+    "css-loader": "0.14.5",
+    "hammerjs": "2.0.4",
+    "jquery": "2.1.4",
+    "lodash": "3.9.3",
+    "materialize-css": "0.96.1",
+    "style-loader": "0.12.3"
+  }
+}
