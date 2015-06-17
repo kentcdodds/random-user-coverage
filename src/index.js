@@ -1,5 +1,5 @@
-import getRandomUser from './getRandomUser';
-import getUserCard from './user-card';
+import getRandomUser from './get-random-user';
+import getUserCard from './get-user-card';
 
 window.jQuery = window.$ = require('jquery'); // <-- don't do this normally, use a webpack loader... I'm in a hurry.
 require('materialize-css/bin/materialize.css');
