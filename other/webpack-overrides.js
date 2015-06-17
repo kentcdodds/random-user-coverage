@@ -26,6 +26,5 @@ module.exports = function(config) {
     },
     devtool: devtool
   });
-  console.log(config);
   return config;
 };
