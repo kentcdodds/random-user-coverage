@@ -6,7 +6,7 @@
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --content-base src/ --port 8080 --colors --progress --watch",
     "build": "NODE_ENV=production webpack --progress --colors && cp src/index.html dist/",
-    "test": "NODE_ENV=test karma start"
+    "test": "NODE_ENV=test COVERAGE=true karma start"
   },
   "repository": {
     "type": "git",
