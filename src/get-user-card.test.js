@@ -1,4 +1,4 @@
-import getUserCard from './get-user-card';
+import './get-user-card';
 describe(`getUserCard`, () => {
   it(`should work`, () => {
     expect(false).to.be.false;

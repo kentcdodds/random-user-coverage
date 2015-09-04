@@ -132,8 +132,7 @@ function getProdConfig(noUglify) {
 
 function getTestConfig() {
   return _.merge({}, getDevConfig(), {
-    entry: './index.test.js',
-    plugins: []
+    entry: './index.test.js'
   });
 }
 
