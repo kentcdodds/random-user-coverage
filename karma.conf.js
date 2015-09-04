@@ -2,7 +2,7 @@
 var path = require('path');
 
 var _ = require('lodash');
-var here = require('kcd-common-tools/utils/here');
+var here = require('path-here');
 
 var packageJson = require(here('package.json'));
 var kcdCommon = packageJson.kcdCommon || {};

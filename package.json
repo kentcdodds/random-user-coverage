@@ -4,7 +4,7 @@
   "description": "Random user app, example for code coverage",
   "main": "dist/index.js",
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server --config ./node_modules/kcd-common-tools/shared/webpack.config.js --content-base src/ --port 8080 --colors --progress --watch",
+    "start": "NODE_ENV=development webpack-dev-server --content-base src/ --port 8080 --colors --progress --watch",
     "build": "NODE_ENV=production webpack --progress --colors && cp src/index.html dist/",
     "test": "NODE_ENV=test karma start"
   },
@@ -45,7 +45,8 @@
     "node-libs-browser": "0.5.2",
     "path-here": "1.1.0",
     "webpack": "1.9.11",
-    "webpack-dev-server": "1.9.0"
+    "webpack-dev-server": "1.9.0",
+    "webpack-notifier": "1.2.1"
   },
   "kcdCommon": {
     "webpack": "other/webpack-overrides.js"
