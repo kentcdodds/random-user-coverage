@@ -30,15 +30,13 @@ function getDevConfig() {
   var devConfig = {
     context: here('src'),
     entry: './index.js',
-    output: {
-      path: here('dist'),
-      filename: 'bundle.js'
-    },
 
     stats: {
       colors: true,
       reasons: true
     },
+
+    devtool: 'eval',
 
     plugins: [],
 
@@ -105,7 +103,8 @@ function getJavaScriptLoaders() {
 function getProdConfig(noUglify) {
   var prodConfig = _.merge({}, getDevConfig(), {
     output: {
-      filename: packageJson.main.replace(/\.js$/, '.min.js')
+      path: here('dist'),
+      filename: 'bundle.js'
     },
     devtool: 'source-map',
     eslint: {
